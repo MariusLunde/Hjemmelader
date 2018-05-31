@@ -6,9 +6,16 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'neasprodukter.html'
 })
 export class NEASProdukterPage {
+  
+  public sendTo: string;
+  
   // this tells the tabs component which Pages
   // should be each tab's root Page
   constructor(public navCtrl: NavController) {
+  }
+  
+  goTo(page) {
+    this.sendTo = page;
   }
   
 }
