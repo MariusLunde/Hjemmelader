@@ -19,7 +19,7 @@
       <ion-label>
         Velg antall amper
       </ion-label>
-      <ion-select name="Ampervelger">
+      <ion-select name="Ampervelger" (ionChange)="selectAmp($event)">
         <ion-option>
           10 A
         </ion-option>

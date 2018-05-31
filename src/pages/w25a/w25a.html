@@ -19,7 +19,7 @@
       <ion-label>
         Velg antall amper
       </ion-label>
-      <ion-select name="Ampervelger">
+      <ion-select name="Ampervelger" (ionChange)="selectAmp($event)">
         <ion-option>
           10 A
         </ion-option>
@@ -32,13 +32,13 @@
       </ion-select>
     </ion-item>
   </form>
-  <button id="w25A-button8" ion-button color="positive" block>
+  <button id="w25A-button8" ion-button color="positive" block (click)="moveOn('230V')" >
     230 V
   </button>
-  <button id="w25A-button9" ion-button color="positive" block>
+  <button id="w25A-button9" ion-button color="positive" block (click)="moveOn('400V1')" >
     400 V enfase
   </button>
-  <button id="w25A-button10" ion-button color="positive" block>
+  <button id="w25A-button10" ion-button color="positive" block (click)="moveOn('400V3')" >
     400 V trefase
   </button>
 </ion-content>

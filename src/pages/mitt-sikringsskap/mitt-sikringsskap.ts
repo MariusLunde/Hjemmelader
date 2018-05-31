@@ -26,7 +26,7 @@ export class MittSikringsskapPage {
         console.dir(alt);
 
         if (alt == "20A") {
-            this.navCtrl.push(W20APage, {valgtBil: this.valgtBil});
+            this.navCtrl.push(W20APage, {valgtBil: this.valgtBil, skapAmp: alt});
         } else if (alt == "25A") {
             this.navCtrl.push(W25APage, {valgtBil: this.valgtBil});
         } else if (alt == "32A") {
