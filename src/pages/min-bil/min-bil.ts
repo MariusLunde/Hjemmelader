@@ -15,6 +15,6 @@ export class MinBilPage {
 
   selectCar(info) {
     let car = info.trim();
-    this.navCtrl.push(MittSikringsskapPage, {param1: car});
+    this.navCtrl.push(MittSikringsskapPage, { valgtBil: car });
   }
 }

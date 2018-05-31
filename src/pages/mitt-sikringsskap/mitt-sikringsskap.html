@@ -1,21 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Mitt sikringsskap
+      Mitt sikringsskap ({{ valgtBil }})
     </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page3">
   <h2 id="mittSikringsskap-heading2" style="color:#000000;">
-    Hvilken amper er det i din hovedsikring
+    Hvilken ampere er det i din hovedsikring
   </h2>
-  <button id="mittSikringsskap-button1" ion-button color="positive" block on-click="goToW20A()">
-    40 A
-  </button>
-  <button id="mittSikringsskap-button2" ion-button color="positive" block on-click="goToW25A()">
-    50 A
-  </button>
-  <button id="mittSikringsskap-button3" ion-button color="positive" block on-click="goToW32A()">
-    63 A
-  </button>
+  <ion-list>
+    <button ion-button block (click)="selectAmpere('20A')">
+      40 A
+    </button>
+    <button id="mittSikringsskap-button2" ion-button color="positive" block (click)="selectAmpere('25A')">
+      50 A
+    </button>
+    <button id="mittSikringsskap-button3" ion-button color="positive" block (click)="selectAmpere('32A')">
+      63 A
+    </button>
+  </ion-list>
 </ion-content>

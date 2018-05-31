@@ -4,8 +4,7 @@ import { MinBilPage } from '../min-bil/min-bil';
 
 @Component({
   selector: 'page-w20a',
-  templateUrl: 'w20a.html',
-  providers:[MinBilPage]
+  templateUrl: 'w20a.html'
 })
 export class W20APage {
     // this tells the tabs component which Pages
