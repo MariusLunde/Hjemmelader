@@ -35,13 +35,13 @@
       </ion-select>
     </ion-item>
   </form>
-  <button id="w32A-button11" ion-button color="positive" block>
+  <button id="w32A-button11" ion-button color="positive" block (click)="moveOn('230V')" >
     230 V
   </button>
-  <button id="w32A-button12" ion-button color="positive" block>
+  <button id="w32A-button12" ion-button color="positive" block (click)="moveOn('400V1')" >
     400 V enfase
   </button>
-  <button id="w32A-button13" ion-button color="positive" block>
+  <button id="w32A-button13" ion-button color="positive" block (click)="moveOn('400V3')" >
     400 V trefase
   </button>
 </ion-content>
