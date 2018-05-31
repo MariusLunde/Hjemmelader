@@ -20,8 +20,6 @@ export class MittSikringsskapPage {
     }
 
     selectAmpere(alt) {
-        console.dir(alt);
-
         this.navCtrl.push("SikringsValgPage", {valgtBil: this.valgtBil, skapAmp: alt});
     }
 

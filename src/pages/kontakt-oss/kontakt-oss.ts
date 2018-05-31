@@ -15,5 +15,9 @@ export class KontaktOssPage {
       document.location.href = 'tel:+47 71 56 55 25';
       console.dir('hei');
   }
+
+  mailUs() {
+      document.location.href = 'mailto: neas@neas.mr.no';
+  }
   
 }
