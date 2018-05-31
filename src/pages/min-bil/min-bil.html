@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Min bil
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page2">
+  <h1 id="minBil-heading1" style="color:#000000;">
+    Velg din bil
+  </h1>
+  <div id="minBil-markdown1" class="show-list-numbers-and-dots">
+    <p style="color:#000000;">
+      For å finne ut hvilken lader som passer for deg må vi vite hvilken bil du har
+    </p>
+  </div>
+  <form id="minBil-form2">
+    <ion-item id="minBil-select1">
+      <ion-label>
+        bil:
+      </ion-label>
+      <ion-select name="Bilvelger" (ionChange)="selectCar($event)">
+        <ion-option>
+          BMW i3
+        </ion-option>
+        <ion-option>
+          Ford Focus Electric (2013-2018)
+        </ion-option>
+        <ion-option>
+          Hyundai IONIQ Electric
+        </ion-option>
+        <ion-option>
+          Kia Soul Electric
+        </ion-option>
+        <ion-option>
+          Mercedes-Benz B250e (2015-2017)
+        </ion-option>
+        <ion-option>
+          Mitsubishi i-MiEV
+        </ion-option>
+        <ion-option>
+          Nissan e-NV200 Evalia
+        </ion-option>
+        <ion-option>
+          Nissan LEAF (24 og 30 kWh, 2011-2017)
+        </ion-option>
+        <ion-option>
+          Nissan LEAF (40 kWh)
+        </ion-option>
+        <ion-option>
+          Opel Ampera-e
+        </ion-option>
+        <ion-option>
+          Peugeot iOn / Citroën C-Zero
+        </ion-option>
+        <ion-option>
+          Renault Zoe R90 Z.E. 40
+        </ion-option>
+        <ion-option>
+          Smart ForFour Electric Drive
+        </ion-option>
+        <ion-option>
+          Tesla Model S 75 (D)
+        </ion-option>
+        <ion-option>
+          Tesla Model S 90D og P100D
+        </ion-option>
+        <ion-option>
+          Tesla Model X 90D og P100D
+        </ion-option>
+        <ion-option>
+          Volkswagen e-Golf
+        </ion-option>
+        <ion-option>
+          Volkswagen e-up!
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </form>
+</ion-content>
