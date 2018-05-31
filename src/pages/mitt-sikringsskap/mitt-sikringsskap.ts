@@ -33,5 +33,5 @@ export class MittSikringsskapPage {
             this.navCtrl.push(W32APage, {valgtBil: this.valgtBil});
         }
     }
-    
+
 }

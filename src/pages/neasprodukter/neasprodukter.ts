@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-n-easprodukter',
-  templateUrl: 'n-easprodukter.html'
+  selector: 'page-neasprodukter',
+  templateUrl: 'neasprodukter.html'
 })
 export class NEASProdukterPage {
   // this tells the tabs component which Pages

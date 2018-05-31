@@ -4,7 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { MinBilPage } from '../pages/min-bil/min-bil';
 import { MittSikringsskapPage } from '../pages/mitt-sikringsskap/mitt-sikringsskap';
-import { NEASProdukterPage } from '../pages/n-easprodukter/n-easprodukter';
+import { NEASProdukterPage } from '../pages/neasprodukter/neasprodukter';
 import { TabsPage } from '../pages/tabs/tabs';
 import { W20APage } from '../pages/w20a/w20a';
 import { W25APage } from '../pages/w25a/w25a';
