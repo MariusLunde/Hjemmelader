@@ -15,7 +15,8 @@ export class NEASProdukterPage {
   }
   
   goTo(page) {
-    this.sendTo = page;
+    this.sendTo = page.trim().charAt(0).toUpperCase() + page.slice(1) + "Page";
+    this.navCtrl.push(this.sendTo);
   }
   
 }
