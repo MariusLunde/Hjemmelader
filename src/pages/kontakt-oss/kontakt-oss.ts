@@ -10,5 +10,10 @@ export class KontaktOssPage {
   // should be each tab's root Page
   constructor(public navCtrl: NavController) {
   }
+
+  callUs() {
+      document.location.href = 'tel:+47 71 56 55 25';
+      console.dir('hei');
+  }
   
 }
