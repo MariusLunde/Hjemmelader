@@ -35,7 +35,7 @@ export class ResultatPage {
   }
 
   ionViewDidLoad() {
-      console.dir(this.effect);
+
   }
 
 

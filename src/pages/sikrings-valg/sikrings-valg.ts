@@ -34,9 +34,6 @@ export class SikringsValgPage {
         this.valgtBil = this.navParams.get('valgtBil');
         this.hovedsikringAmpere = this.navParams.get('skapAmp');
 
-        console.log("Got selections: ");
-        console.dir(this.valgtBil);
-        console.dir(this.hovedsikringAmpere);
 
         if (this.hovedsikringAmpere == '63') {
             this.vis32Ampere = true;
