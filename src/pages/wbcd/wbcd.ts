@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+
 /**
  * Generated class for the WbcdPage page.
  *
@@ -17,4 +18,8 @@ export class WbcdPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+    getThere(site) {
+      this.navCtrl.push(site);
+
+    }
 }

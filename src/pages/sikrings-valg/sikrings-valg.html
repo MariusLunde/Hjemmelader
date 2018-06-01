@@ -20,11 +20,13 @@
       For at vi skal velge riktig lader til deg trenger vi å vite hva slags strømstyrke du vil ha til laderen
     </p>
   </div>
+
   <form id="w32A-form5">
     <ion-item id="w32A-select4">
       <ion-label>
         Velg antall ampere
       </ion-label>
+
       <ion-select name="Ampervelger" (ionChange)="selectAmp($event)">
         <ion-option value="10">
           10 A
@@ -40,14 +42,17 @@
         </ion-option>
       </ion-select>
     </ion-item>
-  </form>
-  <button id="w32A-button11" ion-button color="positive" block (click)="moveOn('230V')" >
+  </form><br>
+  <h4>
+    Og til slutt trenger vi å vite spenningen i ditt sikringskap
+  </h4><br>
+  <button id="w32A-button11" ion-button color="secondary" block (click)="moveOn('230V')" >
     230 V
-  </button>
-  <button id="w32A-button12" ion-button color="positive" block (click)="moveOn('400V1')" >
+  </button><br>
+  <button id="w32A-button12" ion-button color="secondary" block (click)="moveOn('400V1')" >
     400 V enfase
-  </button>
-  <button id="w32A-button13" ion-button color="positive" block (click)="moveOn('400V3')" >
+  </button><br>
+  <button id="w32A-button13" ion-button color="secondary" block (click)="moveOn('400V3')" >
     400 V trefase
   </button>
 </ion-content>
