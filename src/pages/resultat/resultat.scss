@@ -1,7 +1,12 @@
 page-resultat {
+  ion-content {
+    text-align: center;
+  }
 
+  .ladetid {
+    color: #ecef00;
+    font-size: 30px;
+    margin-top: 10px;
+  }
 }
 
-h2 {
-  text-align: center;
-}
