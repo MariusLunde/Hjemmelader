@@ -4,5 +4,5 @@ app. See `ionic cordova resources --help` for details.
 
 Cordova reference documentation:
 
-- Icons: https://cordova.apache.org/docs/en/latest/config_ref/images.html
-- Splash Screens: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/
+- Icons: resources\NeasHjemmelader Icon.png;
+- Splash Screens: resources\NEAS Hjemmelqader Splash.png;
