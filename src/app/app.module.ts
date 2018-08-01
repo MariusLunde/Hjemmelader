@@ -4,9 +4,9 @@ import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import {MyApp} from './app.component';
 import {MinBilPage} from '../pages/min-bil/min-bil';
 import {MittSikringsskapPage} from '../pages/mitt-sikringsskap/mitt-sikringsskap';
-import {NEASProdukterPage} from '../pages/neasprodukter/neasprodukter';
 import {TabsPage} from '../pages/tabs/tabs';
-import {KontaktOssPage} from '../pages/kontakt-oss/kontakt-oss';
+import {MittForbrukPage} from "../pages/mitt-forbruk/mitt-forbruk";
+import {PrisResultatPage} from "../pages/pris-resultat/pris-resultat";
 
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
@@ -16,10 +16,9 @@ import {SplashScreen} from '@ionic-native/splash-screen';
         MyApp,
         MinBilPage,
         MittSikringsskapPage,
-        NEASProdukterPage,
         TabsPage,
-        KontaktOssPage,
-
+        MittForbrukPage,
+        PrisResultatPage,
     ],
     imports: [
         BrowserModule,
@@ -30,9 +29,9 @@ import {SplashScreen} from '@ionic-native/splash-screen';
         MyApp,
         MinBilPage,
         MittSikringsskapPage,
-        NEASProdukterPage,
         TabsPage,
-        KontaktOssPage,
+        MittForbrukPage,
+        PrisResultatPage,
     ],
     providers: [
         StatusBar,

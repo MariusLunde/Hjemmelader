@@ -66,6 +66,30 @@ export class ResultatPage {
           this.ladeKap = 31500;
       }else if(this.bilValg == 'Volkswagen e-up!') {
           this.ladeKap = 16800;
+      }else if(this.bilValg == 'Chevrolet Bolt') {
+          this.ladeKap = 60000;
+      }else if(this.bilValg == 'Citroën Berlingo') {
+          this.ladeKap = 22500;
+      }else if(this.bilValg == 'Buddy Electric Buddy') {
+          this.ladeKap = 14400;
+      }else if(this.bilValg == 'Smart Fortwo Electric Drive') {
+          this.ladeKap = 17600;
+      }else if(this.bilValg == 'Renault Twizy') {
+          this.ladeKap = 6800;
+      }else if(this.bilValg == 'Renault Kangoo Z.E.') {
+          this.ladeKap = 24000;
+      }else if(this.bilValg == 'Renault Fluence') {
+          this.ladeKap = 22000;
+      }else if(this.bilValg == 'Bolloré Bluecar') {
+          this.ladeKap = 30000;
+      }else if(this.bilValg == 'BYD Auto e6') {
+          this.ladeKap = 61000;
+      }else if(this.bilValg == 'Tazzari Tazzari Zero') {
+          this.ladeKap = 15000;
+      }else if(this.bilValg == 'Tesla Motors Roadster') {
+          this.ladeKap = 185000;
+      }else if(this.bilValg == 'Elbil Norge Buddy ALB') {
+          this.ladeKap = 13000;
       }
 
 

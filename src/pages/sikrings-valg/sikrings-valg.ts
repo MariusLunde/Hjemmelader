@@ -52,7 +52,9 @@ export class SikringsValgPage {
     }
 
     selectAmp(amp) {
+
         this.ladesikringAmpere = amp.trim();
+        console.log(this.ladesikringAmpere);
     }
 
     moveOn(kurs) {
