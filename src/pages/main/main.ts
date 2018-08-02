@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {MinBilPage} from "../min-bil/min-bil";
 
 /**
- * Generated class for the PrisResultatPage page.
+ * Generated class for the MainPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,20 +11,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-pris-resultat',
-  templateUrl: 'pris-resultat.html',
+  selector: 'page-main',
+  templateUrl: 'main.html',
 })
-export class PrisResultatPage {
-
-  public pris: number;
+export class MainPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.pris = this.navParams.get('pris');
-
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PrisResultatPage');
+    console.log('ionViewDidLoad MainPage');
   }
 
+    goToNext() {
+        this.navCtrl.push(MinBilPage);
+    }
 }

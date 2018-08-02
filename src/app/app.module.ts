@@ -4,21 +4,17 @@ import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import {MyApp} from './app.component';
 import {MinBilPage} from '../pages/min-bil/min-bil';
 import {MittSikringsskapPage} from '../pages/mitt-sikringsskap/mitt-sikringsskap';
-import {TabsPage} from '../pages/tabs/tabs';
-import {MittForbrukPage} from "../pages/mitt-forbruk/mitt-forbruk";
-import {PrisResultatPage} from "../pages/pris-resultat/pris-resultat";
 
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
+import {MainPage} from "../pages/main/main";
 
 @NgModule({
     declarations: [
         MyApp,
         MinBilPage,
         MittSikringsskapPage,
-        TabsPage,
-        MittForbrukPage,
-        PrisResultatPage,
+        MainPage,
     ],
     imports: [
         BrowserModule,
@@ -29,9 +25,7 @@ import {SplashScreen} from '@ionic-native/splash-screen';
         MyApp,
         MinBilPage,
         MittSikringsskapPage,
-        TabsPage,
-        MittForbrukPage,
-        PrisResultatPage,
+        MainPage,
     ],
     providers: [
         StatusBar,

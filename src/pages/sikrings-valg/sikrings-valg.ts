@@ -72,5 +72,6 @@ export class SikringsValgPage {
             laderAmpere: this.ladesikringAmpere,
             ladeKurs: this.ladeKurs
         });
+
     }
 }

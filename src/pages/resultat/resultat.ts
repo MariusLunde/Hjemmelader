@@ -104,6 +104,13 @@ export class ResultatPage {
       this.ladeTid = Math.round(this.midLade);
   }
 
+  tilutregning() {
+      this.navCtrl.push("MittForbrukPage", {
+          ladeTid: this.ladeTid
+      });
+      console.log("pressed");
+  }
+
   ionViewDidLoad() {
 
   }
