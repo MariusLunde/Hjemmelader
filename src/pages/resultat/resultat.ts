@@ -16,8 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class ResultatPage {
 
     public bilValg: string;
-    public hovedSikring: string;
-    public ladeAmpere: string;
+    public ladeAmpere: number;
     public ladeKurs: string;
     public effect: number;
     public ladeKap: number;
@@ -26,7 +25,6 @@ export class ResultatPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
       this.bilValg = this.navParams.get('bilvalg');
-      this.hovedSikring = this.navParams.get('hovedSikring');
       this.ladeAmpere = this.navParams.get('laderAmpere');
       this.ladeKurs = this.navParams.get('ladeKurs');
 
@@ -94,9 +92,9 @@ export class ResultatPage {
 
 
       if(this.ladeKurs == '400V3'){
-        this.effect = 690 * parseInt(this.ladeAmpere);
+        this.effect = 690 * this.ladeAmpere;
       }else {
-        this.effect = 230 * parseInt(this.ladeAmpere);
+        this.effect = 230 * this.ladeAmpere;
       }
 
       this.midLade = this.ladeKap / this.effect;
@@ -108,7 +106,6 @@ export class ResultatPage {
       this.navCtrl.push("MittForbrukPage", {
           ladeTid: this.ladeTid
       });
-      console.log("pressed");
   }
 
   ionViewDidLoad() {

@@ -13,36 +13,8 @@
 </ion-header>
 <ion-content padding>
   <h3 id="w32A-heading5" style="color:#000000;">
-    Du behøver en elbillader med mindre enn eller like mye som {{ maxAmpere }} Amp
+    Du behøver en elbillader med ca {{ maxAmpere }} Amp
   </h3>
-  <div id="w32A-markdown5" class="show-list-numbers-and-dots">
-    <p style="color:#000000;">
-      For at vi skal velge riktig lader til deg trenger vi å vite hva slags strømstyrke du vil ha til laderen
-    </p>
-  </div>
-
-  <form id="w32A-form5">
-    <ion-item id="w32A-select4">
-      <ion-label>
-        Velg antall ampere
-      </ion-label>
-
-      <ion-select name="Ampervelger" (ionChange)="selectAmp($event)">
-        <ion-option value="10">
-          10 A
-        </ion-option>
-        <ion-option value="16">
-          16 A
-        </ion-option>
-        <ion-option value="20">
-          20 A
-        </ion-option>
-        <ion-option  value="32" *ngIf="vis32Ampere">
-          32 A
-        </ion-option>
-      </ion-select>
-    </ion-item>
-  </form><br>
   <h4>
     Og til slutt trenger vi å vite spenningen i ditt sikringskap
   </h4><br>

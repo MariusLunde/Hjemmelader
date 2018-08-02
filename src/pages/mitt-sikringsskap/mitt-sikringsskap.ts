@@ -19,8 +19,10 @@ export class MittSikringsskapPage {
         this.valgtBil = this.navParams.get('valgtBil');
     }
 
-    selectAmpere(alt) {
-        this.navCtrl.push("SikringsValgPage", {valgtBil: this.valgtBil, skapAmp: alt});
+    selectAmp(alt) {
+        this.navCtrl.push("SikringsValgPage", {
+            valgtBil: this.valgtBil,
+            skapAmp: alt});
     }
 
 }

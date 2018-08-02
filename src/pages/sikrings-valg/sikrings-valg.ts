@@ -16,16 +16,11 @@ import {IonicPage, NavController, NavParams} from 'ionic-angular';
 export class SikringsValgPage {
 
     public valgtBil: string;
-    public hovedsikringAmpere: string;
-    public ladesikringAmpere: string = "";
+    public hovedsikringAmpere: number;
+    public ladesikringAmpere: number;
     public ladeKurs: string;
 
-    public title: string = "Velg sikring for lader";
-    maxAmpere: string = "20";
-
-    public vis20Ampere: boolean = false;
-    public vis32Ampere: boolean = false;
-
+    maxAmpere: number;
 
     constructor(
         public navCtrl: NavController,
@@ -34,16 +29,7 @@ export class SikringsValgPage {
         this.valgtBil = this.navParams.get('valgtBil');
         this.hovedsikringAmpere = this.navParams.get('skapAmp');
 
-
-        if (this.hovedsikringAmpere == '63') {
-            this.vis32Ampere = true;
-            this.vis20Ampere = true;
-            this.maxAmpere = '32';
-        }
-        if (this.hovedsikringAmpere == '50') {
-            this.vis20Ampere = true;
-            this.maxAmpere = '25';
-        }
+        this.maxAmpere = this.hovedsikringAmpere / 2;
 
     }
 
@@ -51,25 +37,10 @@ export class SikringsValgPage {
 
     }
 
-    selectAmp(amp) {
-
-        this.ladesikringAmpere = amp.trim();
-        console.log(this.ladesikringAmpere);
-    }
-
     moveOn(kurs) {
-
-        this.ladeKurs = kurs.trim();
-
-        if (this.ladesikringAmpere == "") {
-            alert("Du må velge styrken på ladesikringen før du går videre!");
-            return;
-        }
-
         this.navCtrl.push("ResultatPage", {
             bilvalg: this.valgtBil,
-            hovedSikring: this.hovedsikringAmpere,
-            laderAmpere: this.ladesikringAmpere,
+            laderAmpere: this.hovedsikringAmpere,
             ladeKurs: this.ladeKurs
         });
 

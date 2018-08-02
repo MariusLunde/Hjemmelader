@@ -9,15 +9,31 @@
   <h3 id="mittSikringsskap-heading2" style="color:#000000;">
     Hvilken ampere er det i din hovedsikring
   </h3>
-  <ion-list><br>
-    <button color="secondary" ion-button block (click)="selectAmpere('40')">
-      40 A
-    </button><br>
-    <button color="secondary" ion-button block (click)="selectAmpere('50')">
-      50 A
-    </button><br>
-    <button color="secondary" ion-button block (click)="selectAmpere('63')">
-      63 A
-    </button>
-  </ion-list>
+  <form>
+    <ion-item>
+      <ion-label>
+        Ampere:
+      </ion-label>
+      <ion-select name="ampereVelger" (ionChange)="selectAmp($event)">
+        <ion-option>
+          13
+        </ion-option>
+        <ion-option>
+          20
+        </ion-option>
+        <ion-option>
+          25
+        </ion-option>
+        <ion-option>
+          32
+        </ion-option>
+        <ion-option>
+          50
+        </ion-option>
+        <ion-option>
+          63
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </form>
 </ion-content>
