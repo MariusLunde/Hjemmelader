@@ -19,13 +19,12 @@ export class MittForbrukPage {
     public pris: number;
     private stromRegner: FormGroup;
     public ladeTid: number;
+    public fixedPris: string;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams,  private formBuilder: FormBuilder) {
 
       this.ladeTid = this.navParams.get('ladeTid');
-
-      console.log(this.ladeTid);
 
       this.stromRegner = this.formBuilder.group({
           strompris : ['0.70', Validators.required],
@@ -42,8 +41,10 @@ export class MittForbrukPage {
       if(this.stromRegner.valid){
           this.pris = this.stromRegner.controls['strompris'].value * this.stromRegner.controls['ladeTid'].value;
 
+          this.fixedPris = this.pris.toFixed(1);
+
           this.navCtrl.push( "PrisResultatPage", {
-              pris: this.pris
+              pris: this.fixedPris
           });
       }else{
           alert("Alle feltene må fylles ut");

@@ -21,7 +21,7 @@ export class ResultatPage {
     public effect: number;
     public ladeKap: number;
     public midLade: number;
-    public ladeTid: number;
+    public ladeTid: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
       this.bilValg = this.navParams.get('bilvalg');
@@ -99,7 +99,7 @@ export class ResultatPage {
 
       this.midLade = this.ladeKap / this.effect;
 
-      this.ladeTid = Math.round(this.midLade);
+      this.ladeTid = this.midLade.toFixed(1);
   }
 
   tilutregning() {
