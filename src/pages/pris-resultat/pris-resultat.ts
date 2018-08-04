@@ -19,7 +19,6 @@ export class PrisResultatPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.pris = this.navParams.get('pris');
-
   }
 
   ionViewDidLoad() {

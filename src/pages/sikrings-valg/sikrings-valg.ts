@@ -29,7 +29,7 @@ export class SikringsValgPage {
         this.valgtBil = this.navParams.get('valgtBil');
         this.hovedsikringAmpere = this.navParams.get('skapAmp');
 
-        this.maxAmpere = this.hovedsikringAmpere / 2;
+        this.maxAmpere = this.hovedsikringAmpere;
 
     }
 

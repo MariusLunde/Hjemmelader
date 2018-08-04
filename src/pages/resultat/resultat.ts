@@ -104,7 +104,8 @@ export class ResultatPage {
 
   tilutregning() {
       this.navCtrl.push("MittForbrukPage", {
-          ladeTid: this.ladeTid
+          ladeTid: this.ladeTid,
+          ladeKap: this.ladeKap
       });
   }
 

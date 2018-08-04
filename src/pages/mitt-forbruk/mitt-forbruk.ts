@@ -20,15 +20,17 @@ export class MittForbrukPage {
     private stromRegner: FormGroup;
     public ladeTid: number;
     public fixedPris: string;
+    public ladeKap: number;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams,  private formBuilder: FormBuilder) {
 
       this.ladeTid = this.navParams.get('ladeTid');
+      this.ladeKap = this.navParams.get('ladeKap');
 
       this.stromRegner = this.formBuilder.group({
           strompris : ['0.70', Validators.required],
-          ladeTid: [this.ladeTid, Validators.required]
+          ladeTid: [this.ladeKap / 1000, Validators.required]
       });
 
   }
@@ -39,7 +41,7 @@ export class MittForbrukPage {
 
   Regnut() {
       if(this.stromRegner.valid){
-          this.pris = this.stromRegner.controls['strompris'].value * this.stromRegner.controls['ladeTid'].value;
+          this.pris = this.stromRegner.controls['strompris'].value * (this.ladeKap / 1000);
 
           this.fixedPris = this.pris.toFixed(1);
 
