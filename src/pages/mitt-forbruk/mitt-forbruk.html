@@ -13,16 +13,16 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding style="background: #f1f1f1">
 
   <form [formGroup] = "stromRegner">
     <ion-item>
-      <ion-label>Strømpris pr Kw/h</ion-label>
-      <ion-input type="number" formControlName="strompris"></ion-input>
+      <ion-label style="text-align: left">Strømpris pr Kw/h: </ion-label>
+      <ion-input type="number" formControlName="strompris" style="text-align: right"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Ladekapasitet Kw/h</ion-label>
-      <ion-input type="number" formControlName="ladeTid"></ion-input>
+      <ion-label style="text-align: left">Ladekapasitet Kw/h: </ion-label>
+      <ion-input type="number" formControlName="ladeTid" style="text-align: right"></ion-input>
     </ion-item>
   </form>
     <button id="regnut" ion-button color="secondary" (click)="Regnut()">

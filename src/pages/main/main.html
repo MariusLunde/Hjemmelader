@@ -7,36 +7,43 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Digi Hjemmelader</ion-title>
+    <ion-title>Hjemmelader.no</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="intro">
+  <ion-slides pager="true" parallax="true" padding style="background: #f1f1f1">
 
-  <div id="intro">
-    <h1>
-      Hei
-    </h1>
-    <h6>
-      er du interessert i å finne ut hvor fort du kan lade din el-bil? Eller hvor mye det vil koste deg?
-    </h6>
-    <p>
-      da er det vel bare å begynne!
-    </p>
-    <p>
-      Dette må du vite for å komme igang.
-    </p>
-    <p>
-      Da trenger jeg å vite hvor mange ampere det er i ditt el-anlegg, dette finner du fort ut av ved å se i ditt sikringsskap.
-    </p>
-    <img src="../../assets/produktbilder/FinneHovedsikringsAmpere.jpg" height="100" width="150"/>
-    <p>
-      Jeg trenger også å vite hvor stor spenning det er i den kursen du skal lade bilen på.
-    </p>
-    <img src="../../assets/produktbilder/speeningHovedsikring.jpg" height="150" width="200"/>
-  </div>
+    <ion-slide vertical-align-top>
+      <img src="assets/produktbilder/main_icon_electrical_systems.png" height="50px" width="50"/>
+      <h1>Velkommen</h1>
+    </ion-slide>
 
-  <button ion-button block (click)="goToNext()">Begynn Testen</button>
+
+    <ion-slide>
+      <img src="assets/produktbilder/Plugg.png" height="50px" width="50"/>
+      <h1>Dette trenger du</h1>
+      <p>Du trenger å vite hvor mange ampere det er i ditt el-anlegg, dette finner du fort ut av ved å se i ditt sikringsskap.
+        (Du kan ha max 10 ampere på hjemmestikk-kontakter)</p>
+    </ion-slide>
+
+
+    <ion-slide>
+      <img src="assets/produktbilder/Lightning.png" height="10" width="50"/>
+      <h1>Dette trenger du</h1>
+      <p>Du trenger også å vite hvor stor spenning det er i den kursen du skal lade bilen på.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/produktbilder/Start.png" height="50px" width="50"/>
+      <h1>Prøv nå!</h1>
+      <button ion-button block (click)="goToNext()">
+        Begynn Testen
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+
 </ion-content>

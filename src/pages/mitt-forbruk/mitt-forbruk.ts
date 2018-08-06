@@ -29,7 +29,7 @@ export class MittForbrukPage {
       this.ladeKap = this.navParams.get('ladeKap');
 
       this.stromRegner = this.formBuilder.group({
-          strompris : ['0.70', Validators.required],
+          strompris : ['1', Validators.required],
           ladeTid: [this.ladeKap / 1000, Validators.required]
       });
 

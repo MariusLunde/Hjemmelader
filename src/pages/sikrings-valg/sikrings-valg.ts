@@ -17,7 +17,6 @@ export class SikringsValgPage {
 
     public valgtBil: string;
     public hovedsikringAmpere: number;
-    public ladesikringAmpere: number;
     public ladeKurs: string;
 
     maxAmpere: number;
@@ -37,11 +36,11 @@ export class SikringsValgPage {
 
     }
 
-    moveOn(kurs) {
-        this.navCtrl.push("ResultatPage", {
+    moveOn(alt) {
+        this.navCtrl.push("TypeLaderPage", {
             bilvalg: this.valgtBil,
             laderAmpere: this.hovedsikringAmpere,
-            ladeKurs: this.ladeKurs
+            ladeKurs: alt
         });
 
     }

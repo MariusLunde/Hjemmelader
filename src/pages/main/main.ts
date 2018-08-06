@@ -17,13 +17,12 @@ import {MinBilPage} from "../min-bil/min-bil";
 export class MainPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MainPage');
-  }
 
     goToNext() {
-        this.navCtrl.push(MinBilPage);
+        this.navCtrl.setRoot(MinBilPage);
     }
+
 }
