@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {MinBilPage} from "../min-bil/min-bil";
+import {Storage} from "@ionic/storage";
 
 /**
  * Generated class for the MainPage page.
@@ -16,13 +17,23 @@ import {MinBilPage} from "../min-bil/min-bil";
 })
 export class MainPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage) {
 
   }
 
 
+
+    ionViewDidLoad() {
+        let sliderShown = this.storage.get('sliderShown');
+        if(sliderShown) {
+            this.storage.set('sliderShown', true);
+        }
+    }
+
     goToNext() {
+        this.storage.set('sliderShown', true);
         this.navCtrl.setRoot(MinBilPage);
     }
+
 
 }
