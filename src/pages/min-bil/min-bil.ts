@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import {NavController, NavParams} from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {MittSikringsskapPage} from "../mitt-sikringsskap/mitt-sikringsskap"
-import { Storage } from "@ionic/storage";
-import {MainPage} from "../main/main";
+import { Storage } from '@ionic/storage';
 
 
+@IonicPage()
 @Component({
   selector: 'page-min-bil',
   templateUrl: 'min-bil.html'
@@ -15,18 +15,11 @@ export class MinBilPage {
   constructor(public navCtrl: NavController, public storage: Storage) {
   }
 
-    ionViewDidLoad() {
-        this.storage.get('intro-done').then(done => {
-            if (!done) {
-                this.storage.set('intro-done', true);
-                this.navCtrl.setRoot(MinBilPage);
-            }
-        });
-    }
+
 
   selectCar(info) {
     let car = info.trim();
-    this.navCtrl.push(MittSikringsskapPage, { valgtBil: car });
+    this.navCtrl.push('MittSikringsskapPage', { valgtBil: car });
   }
 
 
