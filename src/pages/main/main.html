@@ -14,11 +14,14 @@
 
 
 <ion-content class="intro">
-  <ion-slides pager="true" parallax="true" padding style="background: #f1f1f1">
-
+    <ion-slides pager="true" parallax="true"  padding style="background: #f1f1f1">
     <ion-slide vertical-align-top>
       <img src="assets/produktbilder/main_icon_electrical_systems.png" height="50px" width="50"/>
       <h1>Velkommen</h1>
+      <div class="buttons">
+        <button type="submit" ion-button  color="light" class="btnPrev" (click)="prev()">Skip</button>
+        <button type="submit" ion-button color="light" class="btnNext" (click)="next()">Next</button>
+      </div>
     </ion-slide>
 
 
@@ -27,6 +30,10 @@
       <h1>Dette trenger du</h1>
       <p>Du trenger å vite hvor mange ampere det er i ditt el-anlegg, dette finner du fort ut av ved å se i ditt sikringsskap.
         (Du kan ha max 10 ampere på hjemmestikk-kontakter)</p>
+      <div class="buttons">
+        <button type="submit" ion-button  color="light" class="btnPrev" (click)="prev()">Skip</button>
+        <button type="submit" ion-button color="light" class="btnNext" (click)="next()">Next</button>
+      </div>
     </ion-slide>
 
 
@@ -34,16 +41,18 @@
       <img src="assets/produktbilder/Lightning.png" height="10" width="50"/>
       <h1>Dette trenger du</h1>
       <p>Du trenger også å vite hvor stor spenning det er i den kursen du skal lade bilen på.</p>
+      <div class="buttons">
+        <button type="submit" ion-button  color="light" class="btnPrev" (click)="prev()">Skip</button>
+        <button type="submit" ion-button color="light" class="btnNext" (click)="next()">Next</button>
+      </div>
     </ion-slide>
 
     <ion-slide>
       <img src="assets/produktbilder/Start.png" height="50px" width="50"/>
       <h1>Prøv nå!</h1>
-      <button ion-button block (click)="goToNext()">
+      <button id="begin" ion-button block (click)="goToNext()">
         Begynn Testen
       </button>
     </ion-slide>
-
   </ion-slides>
-
 </ion-content>

@@ -1,3 +1,26 @@
 ion-slide.swiper-slide {
   align-items: flex-start;
 }
+
+
+ion-slide .buttons .btnPrev{
+  text-align: left;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+
+}
+
+ion-slide  .buttons .btnNext{
+  right: 0;
+  bottom: 0;
+  display: inline;
+  position: fixed;
+}
+
+#begin {
+  right: 0;
+  bottom: 10%;
+  display: inline;
+  position: fixed;
+}
